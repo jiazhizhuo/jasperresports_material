@@ -1,0 +1,23 @@
+?:  哪些业务场景会出现这种较大的报表？
+
+表：iccid  30w
+列：iccid_id , mvno_business_Id, mvno_user_id, iccid
+记录数：1w
+fillReport(): 9551ms
+getWorkbook(): 13141ms 
+wb.write(): 392ms 
+analyzeExcelFile(): 94ms
+xls: 2.4MB
+
+
+
+
+表：iccid
+列：iccid_id , mvno_business_Id, mvno_user_id, iccid
+记录数：10w
+fillReport(): 86804ms
+  getWorkbook(): 366727ms
+wb.write(): 3435ms
+analyzeExcelFile(): 158ms
+xls: 24.2MB
+
